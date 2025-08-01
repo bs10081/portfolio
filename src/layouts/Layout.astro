@@ -19,7 +19,7 @@ const { image, summary, url, theme } = CV.basics;
     <meta charset="UTF-8" />
     <title>{title}</title>
     <meta name="description" content={summary} />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="preload" as="image" href={image} />
     <meta property="og:url" content={url} />
@@ -38,8 +38,8 @@ const { image, summary, url, theme } = CV.basics;
     <Analytics />
   </head>
   <body data-theme={theme} class="relative bg-skin-fill font-sans">
-    <div class="absolute top-0 -z-10 h-full w-full print:hidden">
-      <div class="absolute bottom-auto left-[20%] right-auto top-0 h-[200px] w-[200px] -translate-x-[30%] translate-y-[20%] rounded-full bg-skin-hue/10 blur-[80px] invert-0 dark:bg-white/5"></div>
+    <div class="absolute inset-0 -z-10 print:hidden">
+      <div class="absolute left-1/2 top-1/2 h-[150vh] w-[150vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-skin-hue/10 blur-[120px] dark:bg-white/5"></div>
     </div>
     <slot />
     <script src="../scripts/main.ts"></script>
@@ -47,13 +47,19 @@ const { image, summary, url, theme } = CV.basics;
 </html>
 
 <style>
+  html {
+    overflow-x: hidden;
+  }
 
-  body{
-    * {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body * {
     @apply rounded-lg;
     cursor: none !important;
     -webkit-user-drag: none;
-    }
   }
   
   a {
@@ -86,6 +92,20 @@ const { image, summary, url, theme } = CV.basics;
     text-wrap: pretty;
   }
   
+  /* Prevent horizontal overflow on mobile */
+  @media (max-width: 768px) {
+    body {
+      padding: 0 1rem;
+    }
+    
+    /* Constrain the background blur to prevent horizontal scroll */
+    .absolute.inset-0.-z-10 > div {
+      width: 100vw !important;
+      left: 50% !important;
+      transform: translateX(-50%) translateY(-50%) !important;
+    }
+  }
+  
   .print {
     display: none !important;
   }
@@ -93,6 +113,7 @@ const { image, summary, url, theme } = CV.basics;
   .dev * {
     @apply border border-red-500/50 bg-red-500/5;
   }
+  
   #hotkeypad [data-backdrop] {
     @apply !bg-zinc-800 !opacity-80;
   }
