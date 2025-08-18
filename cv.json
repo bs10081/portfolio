@@ -104,7 +104,7 @@
       "responsibilities": [
         "Developed and maintained projects, ensuring scalability, performance, clean code, efficient architecture and robust user experiences.",
         "Collaborated with cross-functional teams of developers, designers, and project managers to deliver high-quality solutions.",
-        "Ensured code quality and optimized front-end performance to meet user needs and business objectives.",
+        "Ensured code quality and optimized front-end and back-end performance to meet user needs and business objectives.",
         "Managed complex, data-intensive projects, ensuring smooth integration of business logic and user interfaces.",
         "Designed and developed highly reactive components and workflows to improve application efficiency and user interaction.",
         "Developed endpoints and services for business logic and data management, ensuring seamless integration with front-end applications."
@@ -113,7 +113,7 @@
         "Optimized front-end performance by resolving critical issues, improving page load times, and enhancing user experience.",
         "Developed an internal tool to streamline client-owned code documentation, introducing interactive design guidelines and testable components.",
         "Created a highly complex application for the national healthcare system, successfully handling large-scale data management and implementing intricate business logic.",
-        "Built reusable and scalable components for a multinational client, ensuring consistency and improving code quality across multiple platforms."
+        "Built a data analysis microservice for the Spanish Treasury Department, reducing a 30-day iteration workflow to under 10 seconds."
       ],
       "skills": {
         "HTML5": "simple-icons:html5",
