@@ -1,15 +1,15 @@
 {
   "analyticsCode": "",
   "basics": {
-    "name": "Chi Chun (Reg). Chien",
+    "name": "Chi Chun, Chien",
     "label": "Software Developer",
     "animated_main_label": "developer",
     "animated_secondary_initial_label": "software",
-    "animated_secondary_final_label": "half_stack",
+    "animated_secondary_final_label": "hpc & gpu",
     "image": "/pfp.webp",
     "email": "i@regchien.info",
     "url": "https://www.linkedin.com/in/RegChien/",
-    "summary": "Student, at the moment. I work on HPC and DevOps. Currently learning about Front-end Development, Cloud Computing and DevOps.",
+    "summary": "An undergraduate student in Information Management, specializing in GPU computing and HPC.",
     "theme": "red",
     "location": {
       "address": "Puli Township",
@@ -133,27 +133,27 @@
     { "name": "HTML", "level": "Advanced", "keywords": ["Web Development", "Frontend"] },
     { "name": "CSS", "level": "Advanced", "keywords": ["Web Development", "Frontend", "Responsive Design"] },
     { "name": "Tailwind", "level": "Intermediate", "keywords": ["Web Development", "Frontend", "CSS Framework", "Responsive Design"] },
-    { "name": "JavaScript", "level": "Advanced", "keywords": ["Web Development", "Frontend", "Backend", "Fullstack"] },
-    { "name": "TypeScript", "level": "Advanced", "keywords": ["Web Development", "Frontend", "Backend", "JavaScript Superset"] },
-    { "name": "Vue", "level": "Intermediate", "keywords": ["Web Development", "Frontend", "JavaScript Library", "UI"] },
-    { "name": "Astro", "level": "Intermediate", "keywords": ["Web Development", "Frontend", "SSR", "Static Generation"] },
+    { "name": "JavaScript", "level": "Beginner", "keywords": ["Web Development", "Frontend", "Backend", "Fullstack"] },
+    { "name": "TypeScript", "level": "Beginner", "keywords": ["Web Development", "Frontend", "Backend", "JavaScript Superset"] },
+    { "name": "Vue", "level": "Beginner", "keywords": ["Web Development", "Frontend", "JavaScript Library", "UI"] },
+    { "name": "Astro", "level": "Beginner", "keywords": ["Web Development", "Frontend", "SSR", "Static Generation"] },
     { "name": "Node", "level": "Intermediate", "keywords": ["Web Development", "Backend", "JavaScript", "Server"] },
     { "name": "PNPM", "level": "Beginner", "keywords": ["Package Manager", "Web Development", "Frontend", "Backend"] },
     { "name": "Java", "level": "Beginner", "keywords": ["Web Development", "Backend"] },
-    { "name": "MySQL", "level": "Beginner", "keywords": ["Backend", "Databases", "SQL", "Relational Database"] },
+    { "name": "MySQL", "level": "Intermediate", "keywords": ["Backend", "Databases", "SQL", "Relational Database"] },
     { "name": "PostgreSQL", "level": "Beginner", "keywords": ["Backend", "Databases", "SQL", "Relational Database"] },
     { "name": "Git", "level": "Advanced", "keywords": ["Version Control", "Collaboration", "Source Code"] },
     { "name": "GitHub", "level": "Advanced", "keywords": ["Version Control", "Collaboration", "Source Code", "Git"] },
     { "name": "AWS", "level": "Beginner", "keywords": ["Cloud Computing", "Backend", "Infrastructure"] },
-    { "name": "Docker", "level": "Beginner", "keywords": ["Virtual Environments", "Backend"] },
+    { "name": "Docker", "level": "Advanced", "keywords": ["Virtual Environments", "Backend"] },
     { "name": "Kubernetes", "level": "Beginner", "keywords": ["Virtual Environments", "Backend", "Container Orchestration"] },
     { "name": "Python", "level": "Intermediate", "keywords": ["Scripting", "Automation", "Web Development"] },
-    { "name": "Shell", "level": "Beginner", "keywords": ["Scripting", "Automation"] },
-    { "name": "Linux", "level": "Intermediate", "keywords": ["OS", "Scripting", "Automation"] },
+    { "name": "Shell", "level": "Advanced", "keywords": ["Scripting", "Automation"] },
+    { "name": "Linux", "level": "Advanced", "keywords": ["OS", "Scripting", "Automation"] },
     { "name": "Figma", "level": "Intermediate", "keywords": ["Prototyping", "Web Development", "Frontend"] }
   ],
   "languages": [
-    { "language": "Chinese", "fluency": "Native speaker" },
+    { "language": "Chinese", "fluency": "Native" },
     { "language": "English", "fluency": "Intermediate" }
   ],
   "projects": [
@@ -194,6 +194,49 @@
       },
       "github": "https://github.com/bs10081/xLog",
       "url": "https://xlog.app"
+    },
+    {
+      "name": "GPU-Accelerated Mixed Integer Programming Optimization using NVIDIA cuOpt",
+      "isActive": true,
+      "description": "A National Science and Technology Council (NSTC) research project focusing on building GPU-accelerated mixed integer programming optimization computation using NVIDIA cuOpt. This project explores high-performance computing solutions for complex optimization problems in various domains including logistics, resource allocation, and operational research.",
+      "highlights": [
+        "🚀 GPU acceleration for optimization",
+        "🔬 NSTC funded research project",
+        "📊 Mixed integer programming solutions",
+        "⚡ High performance computing"
+      ],
+      "stack": {
+        "Python": "simple-icons:python",
+        "CUDA": "simple-icons:nvidia",
+        "cuOpt": "simple-icons:nvidia",
+        "C++": "simple-icons:cplusplus",
+        "NumPy": "simple-icons:numpy",
+        "Docker": "mdi:docker"
+      },
+      "funding": "National Science and Technology Council, Taiwan"
+    },
+    {
+      "name": "YouTuber Stock Recommendation Credibility Analysis",
+      "isActive": true,
+      "description": "A National Science and Technology Council (NSTC) research project analyzing the credibility of stock recommendations from YouTubers based on video content and comment sentiment analysis. This project combines natural language processing, sentiment analysis, and financial data analysis to evaluate the reliability of social media financial advice.",
+      "highlights": [
+        "🎥 Video content analysis",
+        "💬 Comment sentiment analysis",
+        "📈 Stock recommendation evaluation",
+        "🤖 NLP and machine learning",
+        "🔬 NSTC funded research"
+      ],
+      "stack": {
+        "Python": "simple-icons:python",
+        "TensorFlow": "simple-icons:tensorflow",
+        "Scikit-learn": "simple-icons:scikitlearn",
+        "NLTK": "simple-icons:python",
+        "Pandas": "simple-icons:pandas",
+        "YouTube API": "simple-icons:youtube",
+        "Docker": "mdi:docker",
+        "n8n": "simple-icons:n8n"
+      },
+      "funding": "National Science and Technology Council, Taiwan"
     }
   ]
 }
